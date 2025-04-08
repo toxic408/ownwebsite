@@ -1,0 +1,113 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.nav-button {
+    border: 0.2rem solid white;
+    padding: 0.6px 0.9rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.about-me {
+    margin: 7rem auto;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+}
+
+.about-me h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    gap: 16rem;
+    margin: 6rem 0;
+}
+
+.text-box {
+    width: 15rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid white;
+}
+
+.spacer {
+    height: 15rem;
+}
+
+#contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#contactForm {
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1rem);
+    justify-content: center;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(2rem);
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out, transform 1s ease-in-out;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.8rem 0;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+}
+
+button {
+    margin-top: 0.9rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#contactForm.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

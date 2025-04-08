@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="html.html"target="_blank">
+                    <button class="nav-button1">Lebenslauf</button>
+                </a>
+            <a href="Abschluss Zeugniss.pdf" target="_blank">
+        <button>Abschluss Zeugnis</button>
+    </a>
+        <a href="Zertifikate.pdf" target="_blank">
+            <button class="nav-button3">Zertifikate</button>
+             </a>
+                </nav>
+            </header>
+    <main>       
+        <section class="about-me">
+            <h1>Kurzprofil</h1>
+            <p>Hallo! Mein Name ist Thomas Kowal. Ich bin sehr an Technik und Hardware interessiert. Ich habe früher mit meinem Vater zusammen PCs zusammengebaut und repariert.</p>
+        </section>
+        <div class="content-section">
+            <div class="text-box">
+                <h2>Berufserfahrung</h2>
+                <p>Erfahrung in Büroorganisation, Dokumentenmanagement und Kundenkontakt im juristischen Bereich. Zusätzliche Einblicke in soziale Arbeit, Pflege und Lagerlogistik. Teamfähig, zuverlässig und anpassungsfähig.</p>
+            </div>
+            <div class="text-box">
+                <h2>Skills</h2>
+                <p>MS Office (sehr gut), HTML, CSS, Python, JavaScript (mit Zertifikat), Hardwarekenntnisse, Deutsch & Polnisch (Muttersprache), Englisch (verhandlungssicher), gutes technisches Verständnis, schnelle Auffassungsgabe.</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="spacer"></div>
+
+    <div id="contactContainer">
+        <div id="contactForm">
+            <h2>Kontaktformular</h2>
+            <form action="mailto:thomaskowal12@gmail.com" method="GET">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">E-Mail:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Nachricht:</label><br>
+                <textarea id="message" name="body" required></textarea><br>
+
+                <button id="sendbutton" type="submit" onclick="popup2()">Absenden</button>
+                <p id="popuptext2"></p>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
